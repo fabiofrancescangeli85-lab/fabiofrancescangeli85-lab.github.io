@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publications &amp; Conference Contributions — Fabio Francescangeli</title>
+<meta name="description" content="Full list of peer-reviewed publications and conference contributions by Fabio Francescangeli.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1B2A2E;
+    --ink-soft:#3E4F52;
+    --bg:#EEF0EC;
+    --bg-panel:#E4E7DF;
+    --teal:#1F4E5F;
+    --teal-deep:#12333E;
+    --ochre:#A6714A;
+    --ochre-soft:#C99B72;
+    --rose:#C4685E;
+    --rose-soft:#E4B8AF;
+    --line:#C7CCC1;
+    --max:1040px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+  body{margin:0; background:var(--bg); color:var(--ink); font-family:'IBM Plex Sans', sans-serif; line-height:1.6; -webkit-font-smoothing:antialiased;}
+  a{color:var(--teal); text-decoration-color:var(--ochre-soft); text-underline-offset:3px;}
+  a:hover{color:var(--ochre);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--rose); outline-offset:3px;}
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 28px;}
+  .eyebrow{font-family:'IBM Plex Mono', monospace; font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--ochre);}
+  h1,h2,h3{font-family:'Fraunces', serif; font-weight:500; line-height:1.15; margin:0; color:var(--teal-deep);}
+
+  nav.top{position:sticky; top:0; z-index:50; background:rgba(238,240,236,0.94); backdrop-filter:blur(6px); border-bottom:1px solid var(--line);}
+  nav.top .wrap{display:flex; align-items:center; justify-content:space-between; padding:14px 28px;}
+  nav.top .brand{font-family:'IBM Plex Mono', monospace; font-size:0.82rem; letter-spacing:0.04em; color:var(--teal-deep); text-decoration:none;}
+  nav.top ul{list-style:none; display:flex; gap:26px; margin:0; padding:0;}
+  nav.top a.navlink{font-family:'IBM Plex Mono', monospace; font-size:0.76rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--ink-soft); text-decoration:none; border-bottom:1px solid transparent; padding-bottom:2px;}
+  nav.top a.navlink:hover{color:var(--teal); border-bottom-color:var(--ochre-soft);}
+  nav.top a.navlink.current{color:var(--teal); border-bottom-color:var(--teal);}
+
+  header.page-head{padding:64px 0 40px;}
+  header.page-head .eyebrow{margin-bottom:14px;}
+  header.page-head h1{font-size:clamp(2rem, 4.4vw, 3rem); font-style:italic; font-weight:400; max-width:760px;}
+  header.page-head p{margin-top:18px; color:var(--ink-soft); max-width:600px; font-size:1.02rem;}
+  header.page-head .orcid-line{margin-top:18px; font-family:'IBM Plex Mono', monospace; font-size:0.82rem; color:var(--ink-soft);}
+
+  .stats-row{display:flex; gap:36px; margin-top:34px; flex-wrap:wrap;}
+  .stat{font-family:'IBM Plex Mono', monospace;}
+  .stat .n{font-size:1.6rem; color:var(--teal); font-weight:500;}
+  .stat .l{font-size:0.68rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--ink-soft); margin-top:2px;}
+
+  section.plist{padding:20px 0 64px;}
+  section.plist.alt{background:var(--bg-panel);}
+  .plist-head{display:flex; align-items:baseline; justify-content:space-between; margin-bottom:22px; padding-top:44px; border-top:1px solid var(--line);}
+  .plist-head h2{font-size:1.4rem; font-style:italic; font-weight:400;}
+  .plist-head .count{font-family:'IBM Plex Mono', monospace; font-size:0.75rem; color:var(--ochre);}
+
+  .prow{display:grid; grid-template-columns: 32px 70px 1fr; gap:16px; padding:14px 0; border-bottom:1px solid var(--line); align-items:baseline;}
+  .prow:first-of-type{border-top:none;}
+  .pnum{font-family:'IBM Plex Mono', monospace; font-size:0.72rem; color:var(--line); font-weight:500;}
+  .pyr{font-family:'IBM Plex Mono', monospace; font-size:0.78rem; color:var(--ochre);}
+  .ptxt{font-size:0.92rem; color:var(--ink-soft); line-height:1.55;}
+  .ptxt strong{color:var(--ink); font-weight:600;}
+  .ptxt em{color:var(--ink); font-style:italic;}
+
+  .empty-note{font-family:'IBM Plex Mono', monospace; font-size:0.8rem; color:var(--ink-soft); padding:14px 0;}
+
+  .back-link{display:inline-block; margin:48px 28px 0; font-family:'IBM Plex Mono', monospace; font-size:0.8rem;}
+
+  footer.simple{background:var(--teal-deep); color:#AFC2C0; padding:36px 0; margin-top:40px;}
+  footer.simple .wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; font-family:'IBM Plex Mono', monospace; font-size:0.72rem;}
+  footer.simple a{color:#DCE6E4;}
+
+  @media (max-width:640px){
+    .prow{grid-template-columns: 24px 56px 1fr;}
+    nav.top ul{gap:14px;}
+  }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">F. FRANCESCANGELI</a>
+    <ul>
+      <li><a class="navlink" href="index.html#about">About</a></li>
+      <li><a class="navlink" href="index.html#core">Career</a></li>
+      <li><a class="navlink" href="index.html#applied">Applied Work</a></li>
+      <li><a class="navlink" href="index.html#fieldwork">Field Work</a></li>
+      <li><a class="navlink current" href="publications.html">Publications</a></li>
+      <li><a class="navlink" href="teaching.html">Teaching</a></li>
+      <li><a class="navlink" href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="wrap">
+    <div class="eyebrow">Full record</div>
+    <h1>Publications &amp; conference contributions</h1>
+    <p>The complete list behind the summary on the main page — peer-reviewed articles, an identification atlas, one outreach publication, and conference presentations from 2011 to today.</p>
+    <div class="orcid-line">ORCID: <a href="https://orcid.org/0000-0002-8309-3315" target="_blank" rel="noopener">0000-0002-8309-3315</a> — kept current there; this page is a periodic export. Citation metrics on <a href="https://scholar.google.com/citations?user=pWJlfPQAAAAJ&hl=it" target="_blank" rel="noopener">Google Scholar</a>.</div>
+    <div class="stats-row">
+      <div class="stat"><div class="n" id="stat-journals">–</div><div class="l">Journal articles</div></div>
+      <div class="stat"><div class="n" id="stat-conferences">–</div><div class="l">Conference contributions</div></div>
+      <div class="stat"><div class="n" id="stat-invited">–</div><div class="l">Invited talks</div></div>
+      <div class="stat"><div class="n">2013–2026</div><div class="l">Active span</div></div>
+    </div>
+  </div>
+</header>
+
+<section class="plist">
+  <div class="wrap">
+    <div class="plist-head">
+      <h2>Peer-reviewed publications</h2>
+      <span class="count" id="journals-list-count"></span>
+    </div>
+    <div id="journals-list"></div>
+  </div>
+</section>
+
+<section class="plist alt">
+  <div class="wrap">
+    <div class="plist-head">
+      <h2>In preparation &amp; under review</h2>
+      <span class="count" id="inprep-list-count"></span>
+    </div>
+    <div id="inprep-list"></div>
+  </div>
+</section>
+
+<section class="plist">
+  <div class="wrap">
+    <div class="plist-head">
+      <h2>Atlas &amp; taxonomic guides</h2>
+      <span class="count" id="atlas-list-count"></span>
+    </div>
+    <div id="atlas-list"></div>
+  </div>
+</section>
+
+<section class="plist alt">
+  <div class="wrap">
+    <div class="plist-head">
+      <h2>Outreach publications</h2>
+      <span class="count" id="outreach-list-count"></span>
+    </div>
+    <div id="outreach-list"></div>
+  </div>
+</section>
+
+<section class="plist">
+  <div class="wrap">
+    <div class="plist-head">
+      <h2>Conference presentations</h2>
+      <span class="count" id="conferences-list-count"></span>
+    </div>
+    <div id="conferences-list"></div>
+  </div>
+</section>
+
+<section class="plist alt">
+  <div class="wrap">
+    <div class="plist-head">
+      <h2>Invited talks</h2>
+      <span class="count" id="invited-list-count"></span>
+    </div>
+    <div id="invited-list"></div>
+  </div>
+</section>
+
+<p class="wrap" style="font-family:'IBM Plex Mono', monospace; font-size:0.8rem; color:var(--ink-soft); margin-top:-8px;">Teaching positions and thesis supervision have moved to their own page: <a href="teaching.html">Teaching &amp; Mentorship</a>.</p>
+
+<a class="back-link wrap" href="index.html">&larr; Back to main page</a>
+
+<footer class="simple">
+  <div class="wrap">
+    <span>Fabio Francescangeli</span>
+    <a href="mailto:fabio.francescangeli85@gmail.com">fabio.francescangeli85@gmail.com</a>
+  </div>
+</footer>
+
+<script src="publications-data.js"></script>
+<script>
+  // All publication lists on this page are generated from publications-data.js.
+  // To add / edit / remove an entry, only that file needs to change — this
+  // script sorts rows by year (newest first), re-numbers them, and updates
+  // the counts automatically. You can add a new entry ANYWHERE in its array;
+  // you don't need to find the right chronological spot by hand.
+
+  function entryCount(n){ return n + ' ' + (n === 1 ? 'entry' : 'entries'); }
+
+  // Extracts a 4-digit year from a "year" field. Entries without a numeric
+  // year ("In prep.", "Submitted", "Under review"...) sort to the top.
+  function parseYear(y){
+    var m = String(y).match(/\d{4}/);
+    return m ? parseInt(m[0], 10) : Infinity;
+  }
+
+  function sortByYearDesc(items){
+    return items.slice().sort(function(a, b){ return parseYear(b.year) - parseYear(a.year); });
+  }
+
+  function renderSection(containerId, items, countLabelFn){
+    var listEl = document.getElementById(containerId);
+    var countEl = document.getElementById(containerId + '-count');
+    if (!items || items.length === 0){
+      listEl.innerHTML = '<div class="empty-note">Nothing here yet.</div>';
+      if (countEl) countEl.textContent = '0 entries';
+      return;
+    }
+    var sorted = sortByYearDesc(items);
+    if (countEl) countEl.textContent = countLabelFn(sorted.length);
+    listEl.innerHTML = sorted.map(function(it, idx){
+      var num = String(idx + 1).padStart(2, '0');
+      return '<div class="prow">'
+        + '<div class="pnum">' + num + '</div>'
+        + '<div class="pyr">' + it.year + '</div>'
+        + '<div class="ptxt">' + it.html + '</div>'
+        + '</div>';
+    }).join('');
+  }
+
+  renderSection('journals-list', PUBLICATIONS_DATA.journals,
+    function(n){ return entryCount(n) + ', most recent first'; });
+  renderSection('inprep-list', PUBLICATIONS_DATA.inPrep,
+    function(n){ return entryCount(n) + ' in preparation / under review'; });
+  renderSection('atlas-list', PUBLICATIONS_DATA.atlas,
+    function(n){ return entryCount(n); });
+  renderSection('outreach-list', PUBLICATIONS_DATA.outreach,
+    function(n){ return entryCount(n); });
+  renderSection('conferences-list', PUBLICATIONS_DATA.conferences,
+    function(n){ return entryCount(n) + ', oral & poster, most recent first'; });
+  renderSection('invited-list', PUBLICATIONS_DATA.invitedTalks,
+    function(n){ return entryCount(n) + ', by invitation'; });
+
+  // Top stats row: journal count = published + in-prep, so it matches the
+  // combined total readers see across the two sections above.
+  document.getElementById('stat-journals').textContent =
+    PUBLICATIONS_DATA.journals.length + PUBLICATIONS_DATA.inPrep.length;
+  document.getElementById('stat-conferences').textContent = PUBLICATIONS_DATA.conferences.length;
+  document.getElementById('stat-invited').textContent = PUBLICATIONS_DATA.invitedTalks.length;
+</script>
+
+</body>
+</html>

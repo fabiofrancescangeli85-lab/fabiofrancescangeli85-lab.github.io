@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fabio Francescangeli — Geoscientist</title>
+<meta name="description" content="Fabio Francescangeli — Geologist &amp; marine ecologist. Environmental monitoring, impact assessment, and applied research on coastal ecosystems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1B2A2E;
+    --ink-soft:#3E4F52;
+    --bg:#EEF0EC;
+    --bg-panel:#E4E7DF;
+    --teal:#1F4E5F;
+    --teal-deep:#12333E;
+    --ochre:#A6714A;
+    --ochre-soft:#C99B72;
+    --rose:#C4685E;
+    --rose-soft:#E4B8AF;
+    --line:#C7CCC1;
+    --max:1040px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  a{color:var(--teal); text-decoration-color:var(--ochre-soft); text-underline-offset:3px;}
+  a:hover{color:var(--ochre);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--rose); outline-offset:3px;}
+
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 28px;}
+
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--ochre);
+  }
+
+  h1,h2,h3{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    line-height:1.12;
+    margin:0;
+    color:var(--teal-deep);
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    padding:96px 0 76px;
+    overflow:hidden;
+    background:
+      linear-gradient(180deg, var(--bg) 0%, var(--bg) 60%, var(--bg-panel) 100%);
+  }
+  .hero-strata{
+    position:absolute;
+    top:0; right:-4%;
+    width:220px; height:100%;
+    display:flex; flex-direction:column;
+    opacity:0.9;
+  }
+  .hero-strata div{flex:1;}
+  .hero .wrap{position:relative; z-index:2;}
+  .hero-eyebrow{margin-bottom:18px;}
+  .hero h1{
+    font-size:clamp(2.4rem, 5.4vw, 3.9rem);
+    max-width:760px;
+    font-style:italic;
+    font-weight:400;
+  }
+  .hero h1 strong{font-style:normal; font-weight:600; color:var(--teal);}
+  .hero p.lede{
+    max-width:560px;
+    margin-top:22px;
+    font-size:1.08rem;
+    color:var(--ink-soft);
+  }
+  .hero .coords{
+    margin-top:34px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    color:var(--ink-soft);
+    letter-spacing:0.02em;
+  }
+  .hero .coords span{color:var(--teal);}
+
+  /* ---------- NAV ---------- */
+  nav.top{
+    position:sticky; top:0; z-index:50;
+    background:rgba(238,240,236,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  nav.top .wrap{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:14px 28px;
+  }
+  nav.top .brand{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.82rem;
+    letter-spacing:0.04em;
+    color:var(--teal-deep);
+  }
+  nav.top ul{
+    list-style:none; display:flex; gap:26px; margin:0; padding:0;
+  }
+  nav.top a{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.76rem;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    color:var(--ink-soft);
+    text-decoration:none;
+    border-bottom:1px solid transparent;
+    padding-bottom:2px;
+  }
+  nav.top a:hover{color:var(--teal); border-bottom-color:var(--ochre-soft);}
+  .nav-toggle{display:none;}
+
+  /* ---------- SECTION shells ---------- */
+  section{padding:74px 0;}
+  section.alt{background:var(--bg-panel);}
+  .section-head{margin-bottom:42px; max-width:640px;}
+  .section-head .eyebrow{margin-bottom:10px;}
+  .section-head h2{font-size:clamp(1.7rem, 3vw, 2.3rem); font-style:italic; font-weight:400;}
+  .section-head p{color:var(--ink-soft); margin-top:14px; font-size:0.98rem;}
+
+  /* ---------- ABOUT ---------- */
+  .about-grid{
+    display:grid; grid-template-columns: 1.3fr 1fr; gap:48px; align-items:start;
+  }
+  .about-grid p{font-size:1.02rem; color:var(--ink-soft); margin:0 0 16px;}
+  .about-grid p:first-child{color:var(--ink); font-size:1.08rem;}
+  .fact-panel{
+    background:var(--bg-panel);
+    border:1px solid var(--line);
+    border-left:3px solid var(--teal);
+    padding:24px 26px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.82rem;
+  }
+  .fact-panel dt{color:var(--ochre); text-transform:uppercase; letter-spacing:0.06em; font-size:0.68rem; margin-top:16px;}
+  .fact-panel dt:first-child{margin-top:0;}
+  .fact-panel dd{margin:4px 0 0; color:var(--ink); line-height:1.5;}
+
+  /* ---------- CORE LOG (signature timeline) ---------- */
+  .core-intro{max-width:640px; margin-bottom:10px;}
+  .core-log{
+    position:relative;
+    margin-top:48px;
+    padding-left:96px;
+  }
+  .depth-rule{
+    position:absolute; left:0; top:0; bottom:0; width:70px;
+    border-right:1px dashed var(--line);
+  }
+  .depth-rule .depth-mark{
+    position:relative;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.68rem;
+    color:var(--ink-soft);
+    padding-top:2px;
+  }
+  .stratum{
+    position:relative;
+    border-left:4px solid var(--teal);
+    padding:6px 0 44px 28px;
+  }
+  .stratum:last-child{padding-bottom:6px;}
+  .stratum::before{
+    content:'';
+    position:absolute; left:-9px; top:6px;
+    width:14px; height:14px; border-radius:50%;
+    background:var(--bg); border:3px solid var(--teal);
+  }
+  .stratum.applied{border-left-color:var(--ochre);}
+  .stratum.applied::before{border-color:var(--ochre);}
+  .stratum.outreach{border-left-color:var(--rose);}
+  .stratum.outreach::before{border-color:var(--rose);}
+  .stratum.current::before{background:var(--rose); box-shadow:0 0 0 4px var(--rose-soft);}
+
+  .stratum .s-date{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    letter-spacing:0.04em;
+    color:var(--ochre);
+    text-transform:uppercase;
+  }
+  .stratum.applied .s-date{color:var(--ochre);}
+  .stratum.outreach .s-date{color:var(--rose);}
+  .stratum h3{font-size:1.18rem; margin-top:6px; font-weight:600; font-family:'Fraunces', serif;}
+  .stratum .s-org{color:var(--ink-soft); font-size:0.9rem; margin-top:2px;}
+  .stratum p.s-body{margin:10px 0 0; color:var(--ink-soft); font-size:0.95rem; max-width:600px;}
+  .tag-row{margin-top:12px; display:flex; gap:8px; flex-wrap:wrap;}
+  .tag{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.68rem;
+    padding:3px 9px;
+    border:1px solid var(--line);
+    border-radius:2px;
+    color:var(--ink-soft);
+    background:var(--bg);
+  }
+
+  .legend{display:flex; gap:22px; margin-top:38px; flex-wrap:wrap;}
+  .legend-item{display:flex; align-items:center; gap:8px; font-family:'IBM Plex Mono', monospace; font-size:0.72rem; color:var(--ink-soft);}
+  .legend-dot{width:10px; height:10px; border-radius:50%;}
+
+  /* ---------- PROJECT CARDS ---------- */
+  .grid-cards{display:grid; grid-template-columns:repeat(2, 1fr); gap:22px; margin-top:8px;}
+  .card{
+    background:var(--bg);
+    border:1px solid var(--line);
+    padding:26px;
+    transition:transform 0.18s ease, box-shadow 0.18s ease;
+    text-align:left;
+    font-family:inherit;
+    cursor:pointer;
+    display:block;
+    width:100%;
+  }
+  .card:hover{transform:translateY(-3px); box-shadow:0 10px 24px rgba(18,51,62,0.08);}
+  .card:focus-visible{outline:2px solid var(--rose); outline-offset:2px;}
+  .card .eyebrow{color:var(--teal);}
+  .card h3{font-size:1.12rem; margin-top:10px; font-weight:600;}
+  .card p{color:var(--ink-soft); font-size:0.92rem; margin-top:10px;}
+  .card .metric{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    color:var(--ochre);
+    margin-top:14px;
+    padding-top:14px;
+    border-top:1px dashed var(--line);
+  }
+  .card .expand-tag{
+    margin-top:12px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.7rem;
+    color:var(--teal);
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+  }
+
+  /* ---------- DETAIL DIALOGS ---------- */
+  dialog.detail-dlg{
+    border:none;
+    padding:0;
+    max-width:640px;
+    width:90vw;
+    background:var(--bg);
+    box-shadow:0 24px 60px rgba(18,51,62,0.28);
+  }
+  dialog.detail-dlg::backdrop{
+    background:rgba(18,51,62,0.55);
+    backdrop-filter:blur(2px);
+  }
+  dialog.detail-dlg .dlg-inner{
+    padding:38px 34px 34px;
+    position:relative;
+    max-height:85vh;
+    overflow-y:auto;
+  }
+  dialog.detail-dlg h3{font-size:1.5rem; margin-top:10px; font-style:italic; font-weight:400;}
+  dialog.detail-dlg p{color:var(--ink-soft); font-size:0.96rem; margin:16px 0 0;}
+  dialog.detail-dlg .metric{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    color:var(--ochre);
+    margin-top:20px;
+    padding-top:16px;
+    border-top:1px dashed var(--line);
+  }
+  .dlg-close{
+    position:absolute; top:18px; right:18px;
+    width:32px; height:32px;
+    border:1px solid var(--line);
+    background:var(--bg);
+    color:var(--ink-soft);
+    font-size:1.2rem;
+    line-height:1;
+    cursor:pointer;
+    border-radius:50%;
+  }
+  .dlg-close:hover{color:var(--rose); border-color:var(--rose-soft);}
+  .ph.wide-ph{aspect-ratio:16/9; margin-top:18px;}
+
+  /* ---------- PUBLICATIONS / OUTREACH LIST ---------- */
+  .list-rows{border-top:1px solid var(--line);}
+  .row{
+    display:grid; grid-template-columns: 90px 1fr;
+    gap:18px;
+    padding:18px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .row .yr{font-family:'IBM Plex Mono', monospace; color:var(--ochre); font-size:0.85rem; padding-top:2px;}
+  .row .rt{color:var(--ink); font-size:0.95rem;}
+  .row .rt span{display:block; color:var(--ink-soft); font-size:0.84rem; margin-top:3px;}
+
+  /* ---------- CONTACT / FOOTER ---------- */
+  footer{
+    background:var(--teal-deep);
+    color:#DCE6E4;
+    padding:64px 0 34px;
+  }
+  footer h2{color:#F4F1E8; font-style:italic; font-weight:400; font-size:clamp(1.7rem,3vw,2.3rem);}
+  footer p{color:#AFC2C0; max-width:520px; margin-top:14px;}
+  .contact-links{margin-top:30px; display:flex; gap:28px; flex-wrap:wrap;}
+  .contact-links a{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.85rem;
+    color:#DCE6E4;
+    text-decoration-color:var(--ochre-soft);
+  }
+  .contact-links a:hover{color:var(--rose-soft);}
+  .foot-bottom{
+    margin-top:56px; padding-top:24px; border-top:1px solid rgba(255,255,255,0.12);
+    font-family:'IBM Plex Mono', monospace; font-size:0.7rem; color:#7F9795;
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
+  }
+
+  /* ---------- responsive ---------- */
+  @media (max-width: 760px){
+    .about-grid{grid-template-columns:1fr;}
+    .grid-cards{grid-template-columns:1fr;}
+    .core-log{padding-left:56px;}
+    .depth-rule{width:40px;}
+    nav.top ul{gap:14px;}
+    nav.top .wrap{flex-wrap:wrap; row-gap:10px;}
+    .hero-strata{width:110px;}
+    dialog.detail-dlg{width:94vw;}
+    dialog.detail-dlg .dlg-inner{padding:30px 22px 26px;}
+  }
+  /* ---------- IMAGE PLACEHOLDERS / GALLERY ---------- */
+  .gallery{
+    display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; margin-top:36px;
+    align-items:start;
+  }
+  .gallery.wide{grid-template-columns:repeat(4, 1fr);}
+  .ph{
+    position:relative;
+    aspect-ratio:4/3;
+    background:
+      repeating-linear-gradient(135deg, var(--bg-panel), var(--bg-panel) 10px, var(--bg) 10px, var(--bg) 20px);
+    border:1px dashed var(--line);
+    display:flex; align-items:center; justify-content:center;
+    overflow:hidden;
+  }
+  .ph img{width:100%; height:100%; object-fit:cover; display:block;}
+  .ph .ph-label{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.66rem;
+    color:var(--ink-soft);
+    text-align:center;
+    padding:0 14px;
+    text-transform:uppercase;
+    letter-spacing:0.05em;
+  }
+  .ph .ph-label span{display:block; color:var(--ochre); margin-top:4px; font-size:0.62rem;}
+  .ph.tall{aspect-ratio:3/4;}
+  .ph.wide-span{grid-column:span 2;}
+  .gitem{display:flex; flex-direction:column;}
+  .gitem .gcap{
+    margin-top:8px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.68rem;
+    color:var(--ink-soft);
+  }
+  .gitem .gcap strong{color:var(--ochre); font-weight:500;}
+
+  .foram-layout{display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; margin-top:20px;}
+  .foram-layout .ph{aspect-ratio:1/1;}
+  .foram-text p{color:var(--ink-soft); font-size:0.98rem; margin:0 0 14px;}
+  .foram-text .cap{font-family:'IBM Plex Mono', monospace; font-size:0.72rem; color:var(--ochre); margin-top:10px;}
+  .cap{font-family:'IBM Plex Mono', monospace; font-size:0.72rem; color:var(--ink-soft);}
+
+  .panorama{margin-top:36px;}
+  .panorama img{width:100%; height:auto; display:block; border:1px solid var(--line);}
+  .panorama .pcap{
+    margin-top:10px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    color:var(--ink-soft);
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+  }
+  .panorama .pcap span:first-child{color:var(--ochre);}
+
+  .sites-map-wrap{margin-top:36px;}
+  #sites-map{
+    height:480px; width:100%;
+    border:1px solid var(--line);
+    background:var(--bg-panel);
+  }
+  #sites-map .leaflet-popup-content-wrapper{
+    border-radius:2px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+  }
+  #sites-map .leaflet-popup-content{margin:10px 12px; line-height:1.5;}
+  .map-legend{
+    display:flex; gap:20px; margin-top:10px;
+    font-family:'IBM Plex Mono', monospace; font-size:0.72rem; color:var(--ink-soft);
+    align-items:center; flex-wrap:wrap;
+  }
+  .map-legend .dot{display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:6px; vertical-align:-1px;}
+
+  @media (max-width:760px){
+    .gallery{grid-template-columns:repeat(2, 1fr);}
+    .gallery.wide{grid-template-columns:repeat(2, 1fr);}
+    .foram-layout{grid-template-columns:1fr;}
+  }
+
+  /* ---------- FUN FORAMS ---------- */
+  .fun-trigger{
+    margin-top:16px;
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color:var(--rose);
+    background:none;
+    border:1px dashed var(--rose-soft);
+    padding:8px 14px;
+    cursor:pointer;
+    border-radius:2px;
+  }
+  .fun-trigger:hover{background:var(--rose-soft); color:var(--teal-deep); border-color:var(--rose);}
+  .fun-dlg{max-width:760px;}
+  .fun-gallery{display:grid; grid-template-columns:repeat(2, 1fr); gap:20px; margin-top:20px;}
+  .fun-gallery .ph{aspect-ratio:1/1;}
+  .fun-gallery .gcap{font-size:0.74rem; line-height:1.5;}
+  @media (max-width:640px){
+    .fun-gallery{grid-template-columns:1fr;}
+  }
+</style>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+</head>
+<body>
+
+<nav class="top">
+  <div class="wrap">
+    <div class="brand">F. FRANCESCANGELI</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#core">Career</a></li>
+      <li><a href="#applied">Applied Work</a></li>
+      <li><a href="#fieldwork">Field Work</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-strata" aria-hidden="true">
+    <div style="background:#DCD9CC;"></div>
+    <div style="background:#CFCBB9;"></div>
+    <div style="background:#C99B72;"></div>
+    <div style="background:#B98A63;"></div>
+    <div style="background:#8FA79D;"></div>
+    <div style="background:#5E8286;"></div>
+    <div style="background:#1F4E5F;"></div>
+    <div style="background:#12333E;"></div>
+  </div>
+  <div class="wrap">
+    <div class="eyebrow hero-eyebrow">Geologist &amp; Marine Ecologist</div>
+    <h1>Reading the seafloor's <strong>record</strong> — and putting it to work.</h1>
+    <p class="lede">I study how coastal and marine environments change over time, using benthic foraminifera as environmental and paleoenvironmental proxies — from Quaternary-scale reconstructions to real-time biomonitoring, with a research core centred on Holocene human-impact baselines. Ten years moving between research institutions and applied environmental work in France, Germany, Switzerland and Italy.</p>
+    <div class="coords">
+      <span>46.8065° N, 7.1620° E</span> — Fribourg, Switzerland · Open to relocation, coastal France or Italy preferred
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div>
+      <div class="eyebrow" style="margin-bottom:14px;">About</div>
+      <p>I'm a geologist and marine ecologist working at the boundary between academic research and applied environmental practice. My core tool is the humble benthic foraminifer — a single-celled organism that, read correctly, reconstructs what a coastline looked like in the past and tracks how it's changing under global change today.</p>
+      <p>That reading has taken different forms: reconstructing centuries to millennia of coastal and harbour change from sediment cores, coordinating the development of biomonitoring software, evaluating international research funding proposals, and teaching the next generation of marine and earth scientists.</p>
+      <p>I'm currently based in Fribourg, Switzerland, and looking to bring this expertise into operational, client-facing environmental work — impact assessments, coastal monitoring, regulatory studies — while staying open to research and institutional roles where this background is equally at home.</p>
+    </div>
+    <dl class="fact-panel">
+      <dt>Based</dt>
+      <dd>Fribourg, Switzerland</dd>
+      <dt>Habilitation</dt>
+      <dd>Associate Professor (Italy) — Sector 04/A2, Structural Geology, Stratigraphy, Sedimentology &amp; Paleontology</dd>
+      <dt>Qualification</dt>
+      <dd>Maître de Conférences — French university system</dd>
+      <dt>Languages</dt>
+      <dd>Italian (native) · French (C1) · English (C1) · German (A1)</dd>
+      <dt>PhD</dt>
+      <dd>Geosciences — Université de Lille, France (2017)</dd>
+      <dt>Fellowship</dt>
+      <dd>Alexander von Humboldt Foundation, Hamburg (2019–2021)</dd>
+      <dt>Bibliometrics</dt>
+      <dd>36 peer-reviewed publications · h-index 19 · 960+ citations (Google Scholar)</dd>
+      <dt>Affiliations</dt>
+      <dd>Società Paleontologica Italiana · The Micropalaeontological Society · Association des Sédimentologistes Français</dd>
+      <dt>ORCID</dt>
+      <dd><a href="https://orcid.org/0000-0002-8309-3315" target="_blank" rel="noopener">0000-0002-8309-3315</a></dd>
+    </dl>
+  </div>
+</section>
+
+<section id="core" class="alt">
+  <div class="wrap">
+    <div class="section-head core-intro">
+      <div class="eyebrow">Career, read like a core</div>
+      <h2>The record, top to bottom.</h2>
+      <p>Sediment cores are read from the surface down — the most recent layer on top, older ground beneath. This timeline follows the same logic: present-day work at the surface, foundational training in depth.</p>
+    </div>
+
+    <div class="legend">
+      <div class="legend-item"><span class="legend-dot" style="background:var(--rose); box-shadow:0 0 0 3px var(--rose-soft);"></span> Current</div>
+      <div class="legend-item"><span class="legend-dot" style="background:var(--teal);"></span> Research</div>
+      <div class="legend-item"><span class="legend-dot" style="background:var(--ochre);"></span> Applied / private-sector-facing</div>
+      <div class="legend-item"><span class="legend-dot" style="background:var(--rose);"></span> Outreach &amp; teaching</div>
+    </div>
+
+    <div class="core-log">
+      <div class="depth-rule" aria-hidden="true">
+        <div class="depth-mark" style="top:0;">0 m — surface</div>
+      </div>
+
+      <div class="stratum current">
+        <div class="s-date">Feb – May 2026</div>
+        <h3>Programme Officer, Environmental Monitoring</h3>
+        <div class="s-org">IUCN — International Union for Conservation of Nature, Gland (short-term mission)</div>
+        <p class="s-body">Defined ecological indicators and risk-assessment criteria for the IUCN Red List of Ecosystems methodology, applied to peatlands at a global scale.</p>
+        <div class="tag-row"><span class="tag">Ecosystem risk assessment</span><span class="tag">International coordination</span></div>
+      </div>
+
+      <div class="stratum applied">
+        <div class="s-date">2021 — ongoing</div>
+        <h3>Part-time Lecturer</h3>
+        <div class="s-org">University of Fribourg, Switzerland</div>
+        <p class="s-body">Teaching micropalaeontology, geostatistics, pedology and mineral resources, alongside research and mission work. Continuous since 2021. <a href="teaching.html">Full teaching list</a>.</p>
+        <div class="tag-row"><span class="tag">Teaching</span><span class="tag">Tertiary transition</span></div>
+      </div>
+
+      <div class="stratum applied">
+        <div class="s-date">2021 – 2025</div>
+        <h3>Senior Geologist — Environmental Projects</h3>
+        <div class="s-org">University of Fribourg, Department of Geosciences</div>
+        <p class="s-body">Led environmental impact studies on industrially-stressed aquatic ecosystems across 15+ sites in Europe, Asia and South America. Secured and managed competitive research funding (SNSF SPARK grant, 100,000 CHF, as principal investigator).</p>
+        <div class="tag-row"><span class="tag">EIE</span><span class="tag">Multi-site coordination</span><span class="tag">Grant management</span></div>
+      </div>
+
+      <div class="stratum">
+        <div class="s-date">2019 – 2021</div>
+        <h3>Humboldt Research Fellow</h3>
+        <div class="s-org">University of Hamburg, Germany</div>
+        <p class="s-body">Two-and-a-half-year fellowship from the Alexander von Humboldt Foundation, held as principal investigator — official project title "Ecological characterization of the Elbe Estuary and the applicability of foraminiferal-based transfer functions for relative sea-level reconstructions." Field results detailed under Applied Work below.</p>
+        <div class="tag-row"><span class="tag">Baseline monitoring</span><span class="tag">Sea-level reconstruction</span><span class="tag">Climate adaptation</span></div>
+      </div>
+
+      <div class="stratum applied">
+        <div class="s-date">2013 – 2018</div>
+        <h3>Research &amp; Teaching Fellow</h3>
+        <div class="s-org">Université de Lille — LOG, &amp; Université du Littoral Côte d'Opale, France</div>
+        <p class="s-body">PhD in Geosciences (2013–2017), a teaching contract (ATER) at Université du Littoral Côte d'Opale — micropalaeontology, sedimentology and general geology to DEUST Techniques de la Mer et du Littoral and Licence SVT students — and a short research assignment at Lille reconstructing Holocene palaeoclimate from planktonic foraminifera, clay mineralogy and grain-size analysis. The Boulogne-sur-Mer harbour baseline is detailed under Applied Work below. <a href="teaching.html">Full teaching list</a>.</p>
+        <div class="tag-row"><span class="tag">200-yr baseline</span><span class="tag">First-author</span><span class="tag">Applied teaching</span></div>
+      </div>
+
+      <div class="stratum">
+        <div class="s-date">2017</div>
+        <h3>PhD, Geosciences</h3>
+        <div class="s-org">Université de Lille, France</div>
+      </div>
+
+      <div class="stratum">
+        <div class="s-date">2010 – 2012</div>
+        <h3>Bachelor &amp; Master, Earth Sciences</h3>
+        <div class="s-org">University of Perugia, Italy — 110/110 cum laude</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="applied">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Applied work</div>
+      <h2>Where the science met a client, a deadline, or a decision.</h2>
+      <p>Four pieces of work that moved from research question to usable tool or regulatory input. Click a card for more detail.</p>
+    </div>
+    <div class="grid-cards">
+      <button class="card" type="button" onclick="document.getElementById('dlg-boulogne').showModal()">
+        <div class="eyebrow">Boulogne-sur-Mer, France</div>
+        <h3>A 200-year pre-industrial baseline</h3>
+        <p>Reconstructed the pre-industrial reference state of a working harbour from a single sediment core — the first study of this kind in France — establishing what "natural" looked like before modern pollution.</p>
+        <div class="metric">First author · Marine Environmental Research, 2016</div>
+        <div class="expand-tag">View details &rarr;</div>
+      </button>
+      <button class="card" type="button" onclick="document.getElementById('dlg-foramecoqs').showModal()">
+        <div class="eyebrow">ForamEcoQS</div>
+        <h3>Coordinating a biomonitoring software suite</h3>
+        <p>Coordinated the development of an analytical software suite that turns foraminiferal assemblage data into standardised ecological quality indicators — built for repeatable use, not a one-off analysis.</p>
+        <div class="metric">Senior / last author · in submission</div>
+        <div class="expand-tag">View details &rarr;</div>
+      </button>
+      <button class="card" type="button" onclick="document.getElementById('dlg-offshore').showModal()">
+        <div class="eyebrow">Offshore gas platform</div>
+        <h3>An eDNA biotic index for industrial monitoring</h3>
+        <p>Contributed, within an international consortium, to an environmental DNA-based biotic index for monitoring the impact of an offshore gas platform — methodology transferable to other marine industrial infrastructure.</p>
+        <div class="metric">Consortium contributor · in review</div>
+        <div class="expand-tag">View details &rarr;</div>
+      </button>
+      <button class="card" type="button" onclick="document.getElementById('dlg-elbe').showModal()">
+        <div class="eyebrow">Elbe Estuary, Germany</div>
+        <h3>Closing a 40-year monitoring gap</h3>
+        <p>Ran the first foraminiferal baseline survey of the Elbe Estuary since 1981, across 22 stations from a research vessel — a reference point for future biomonitoring under climate change.</p>
+        <div class="metric">First author · Estuarine, Coastal and Shelf Science, 2021</div>
+        <div class="expand-tag">View details &rarr;</div>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Detail dialogs ===== -->
+<dialog class="detail-dlg" id="dlg-boulogne">
+  <div class="dlg-inner">
+    <button class="dlg-close" type="button" onclick="document.getElementById('dlg-boulogne').close()" aria-label="Close">&times;</button>
+    <div class="eyebrow">Boulogne-sur-Mer, France</div>
+    <h3>A 200-year pre-industrial baseline</h3>
+    <div class="ph wide-ph" style="aspect-ratio:1400/1902;"><img src="images/boulogne-fig4-foram-assemblage.jpg" alt="Figure showing the 200-year foraminiferal record from Boulogne-sur-Mer harbour: relative abundance of main species and Ecological Quality Status (EcoQS) index from 1678 to 2012, plus the ecological grouping model used to interpret it." style="width:100%;height:100%;object-fit:contain;background:#fff;"></div>
+    <div class="cap" style="margin-top:8px;">Figure from Francescangeli et al. (2016), Marine Environmental Research — foraminiferal assemblage and EcoQS index over the 200-year record (top), ecological grouping model (bottom).</div>
+    <p>Working ports rarely have a documented "before" — a record of what the local ecosystem looked like prior to industrialisation. This study reconstructed exactly that for Boulogne-sur-Mer harbour, using a single sediment core spanning roughly two centuries, read through changes in benthic foraminiferal assemblages over time.</p>
+    <p>The result is a pre-industrial reference state that can be used to judge how far the present-day harbour has drifted from a natural baseline — the same logic that underlies an <em>état initial</em> in a modern environmental impact assessment, applied retrospectively. It was, to my knowledge, the first study in France to establish this kind of century-scale baseline for a port environment from a single record.</p>
+    <div class="metric">First author · Marine Environmental Research, 2016</div>
+  </div>
+</dialog>
+
+<dialog class="detail-dlg" id="dlg-foramecoqs">
+  <div class="dlg-inner">
+    <button class="dlg-close" type="button" onclick="document.getElementById('dlg-foramecoqs').close()" aria-label="Close">&times;</button>
+    <div class="eyebrow">ForamEcoQS</div>
+    <h3>Coordinating a biomonitoring software suite</h3>
+    <p>Most foraminifera-based ecological quality assessments live as one-off analyses buried in a paper's supplementary material — useful once, then hard to reuse. ForamEcoQS is an attempt to change that: an analytical software suite that takes raw assemblage data and outputs standardised ecological quality indicators, repeatably and consistently.</p>
+    <p>I coordinated its development as senior/last author, working with the team on the logic of the indicators and how the tool should behave for someone who isn't a foraminiferal taxonomist by training — the target user is a biomonitoring practitioner, not necessarily a specialist.</p>
+    <div class="metric">Senior / last author · in submission to Methods in Ecology and Evolution</div>
+  </div>
+</dialog>
+
+<dialog class="detail-dlg" id="dlg-offshore">
+  <div class="dlg-inner">
+    <button class="dlg-close" type="button" onclick="document.getElementById('dlg-offshore').close()" aria-label="Close">&times;</button>
+    <div class="eyebrow">Offshore gas platform</div>
+    <h3>An eDNA biotic index for industrial monitoring</h3>
+    <p>Offshore infrastructure — gas platforms, but the same logic extends to EMR foundations, subsea cables — needs environmental monitoring that doesn't depend on slow, specialist-heavy taxonomic identification. This project developed a biotic index based on environmental DNA (eDNA) rather than traditional morphological counts, to monitor the ecological impact of an offshore gas platform.</p>
+    <p>I contributed to this work within an international consortium rather than leading it — my role was on the foraminiferal ecology side of the index. The eDNA approach itself is the more transferable part: the same logic could apply to monitoring around other offshore industrial infrastructure.</p>
+    <div class="metric">Consortium contributor · in review</div>
+  </div>
+</dialog>
+
+<dialog class="detail-dlg" id="dlg-elbe">
+  <div class="dlg-inner">
+    <button class="dlg-close" type="button" onclick="document.getElementById('dlg-elbe').close()" aria-label="Close">&times;</button>
+    <div class="eyebrow">Elbe Estuary, Germany</div>
+    <h3>Closing a 40-year monitoring gap</h3>
+    <p>The Elbe Estuary hadn't had a dedicated foraminiferal survey since 1981 — a 40-year gap during which the estuary's hydrology, shipping traffic and water quality all changed substantially. This project ran a fresh baseline: 22 stations sampled from the research vessel <em>Ludwig Prandtl</em>, comparing living and dead assemblages to the 1981 record.</p>
+    <p>Beyond the baseline itself, the sediment record was used to build foraminifera-based transfer functions for reconstructing relative sea-level change — connecting present-day biomonitoring to longer-term questions about coastal adaptation under climate change.</p>
+    <div class="metric">First author · Estuarine, Coastal and Shelf Science, 2021</div>
+  </div>
+</dialog>
+
+<dialog class="detail-dlg fun-dlg" id="dlg-funforams">
+  <div class="dlg-inner">
+    <button class="dlg-close" type="button" onclick="document.getElementById('dlg-funforams').close()" aria-label="Close">&times;</button>
+    <div class="eyebrow">A lighter side of micropalaeontology</div>
+    <h3>Forams gone wild</h3>
+    <p>Under the microscope, foraminifera stop looking like data points and start looking like tiny sculptures — or, depending on the species, tiny disco balls. A few favourites from ten years behind the lens.</p>
+    <div class="fun-gallery">
+      <div class="gitem">
+        <div class="ph"><img src="images/fun-ammonia-veneta.jpg" alt="Pseudo-coloured scanning electron microscope image of Ammonia veneta, rendered in rainbow hues." style="width:100%;height:100%;object-fit:cover;"></div>
+        <div class="gcap"><strong><em>Ammonia veneta</em>, glammed up</strong> — the colours are a false-colour SEM render, not real life, but the confidence is entirely genuine.</div>
+      </div>
+      <div class="gitem">
+        <div class="ph"><img src="images/fun-uvigerina.jpg" alt="Microscope photo of Uvigerina sp., an elongated ribbed foraminifer." style="width:100%;height:100%;object-fit:cover;"></div>
+        <div class="gcap"><strong><em>Uvigerina</em> sp.</strong> — built like a corn cob, moves like it owns the seafloor.</div>
+      </div>
+      <div class="gitem">
+        <div class="ph"><img src="images/fun-agglutinato-bse.jpg" alt="Backscatter electron microscope image of an agglutinated foraminifer built from sediment grains." style="width:100%;height:100%;object-fit:cover;"></div>
+        <div class="gcap"><strong>Agglutinated foraminifer, BSE image</strong> — proof that even single-celled organisms appreciate a good gravel driveway.</div>
+      </div>
+      <div class="gitem">
+        <div class="ph"><img src="images/fun-elphidium.jpg" alt="Microscope photo of Elphidium oceanensis, a planispiral foraminifer with wavy sutures." style="width:100%;height:100%;object-fit:cover;"></div>
+        <div class="gcap"><strong><em>Elphidium oceanensis</em></strong> — those wavy sutures are real; the faint impression that it's judging you is, probably, not.</div>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<section id="fieldwork" class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">In the field</div>
+      <h2>Where the samples come from.</h2>
+      <p>Sediment cores, tidal transects, and research-vessel campaigns across the North Sea, the English Channel and beyond.</p>
+    </div>
+    <div class="panorama">
+      <img src="images/fieldwork-canche-estuary-panorama.jpg" alt="Panoramic view of the Canche Estuary, English Channel, at low tide, with the harbour and dunes in the background.">
+      <div class="pcap">
+        <span>Canche Estuary, English Channel</span>
+        <span>Panorama at low tide</span>
+      </div>
+    </div>
+    <div class="gallery wide">
+      <div class="gitem">
+        <div class="ph"><img src="images/fieldwork-neufeld-tidal-flat-marsh.jpg" alt="Transition zone between the bare tidal flat and the vegetated tidal marsh at Neufeld, Germany, under an overcast sky."></div>
+        <div class="gcap"><strong>Neufeld, Germany</strong> — tidal flat to tidal marsh transition</div>
+      </div>
+      <div class="gitem">
+        <div class="ph tall"><img src="images/fieldwork-reeds-tidal-creek.jpg" alt="A tidal creek glimpsed through a dense screen of reeds, with muddy sediment banks catching the low winter sun."></div>
+        <div class="gcap"><strong>Reed screen, tidal creek</strong> — turns out reeds make lovely sampling obstacles</div>
+      </div>
+      <div class="gitem">
+        <div class="ph tall"><img src="images/fieldwork-van-veen-grab.jpg" alt="A Van Veen grab sampler suspended over the side of a research vessel, ready for deployment, with churning brown water below."></div>
+        <div class="gcap"><strong>Van Veen grab</strong> — the unglamorous workhorse of boat-based sediment sampling</div>
+      </div>
+      <div class="gitem">
+        <div class="ph"><img src="images/fieldwork-low-tide-gear.jpg" alt="Fabio Francescangeli standing on a mudflat at dusk, dressed in waders, a headlamp and full waterproof gear, ready for sampling."></div>
+        <div class="gcap"><strong>Pre-dawn low tide, English Channel</strong> — headlamp, waders, and zero dignity: this is what sampling season actually looks like</div>
+      </div>
+    </div>
+
+    <div class="sites-map-wrap">
+      <div class="eyebrow" style="margin-top:8px;">Ten years, one map</div>
+      <h3 style="margin:6px 0 10px;">Study sites worldwide</h3>
+      <p class="cap" style="margin-bottom:14px;">Each marker shows the total number of works tied to that site — publications, conference contributions and supervised theses combined. Click a marker for the full list.</p>
+      <div id="sites-map"></div>
+      <div class="map-legend">
+        <span><span class="dot" style="background:#0F6E56;"></span>Number = total works at that site (publications + conferences + theses)</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="foraminifera">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">The organism behind the data</div>
+      <h2>What is a foraminifer?</h2>
+    </div>
+    <div class="foram-layout">
+      <div class="ph"><img src="images/foram-ammonia-confertitesta.jpg" alt="Reflected-light microscope photo of Ammonia confertitesta, a trochospiral foraminifer with a hyaline calcareous shell, stained pink by Rose Bengal." style="width:100%;height:100%;object-fit:cover;"></div>
+      <div class="foram-text">
+        <p>Foraminifera are single-celled marine organisms, most no bigger than a grain of sand, that build a shell from calcium carbonate or agglutinated sediment grains. They live on the seafloor by the billions, in nearly every marine and coastal environment on Earth.</p>
+        <p>Because different species tolerate different conditions — salinity, pollution, oxygen, sediment type — their presence, absence and abundance record the health of an ecosystem with unusual precision. A dye called Rose Bengal is used to stain living specimens pink, distinguishing them from empty, long-dead shells in the same sediment sample.</p>
+        <p>Their shells also fossilise well, which means the same organism that tells you about water quality today can tell you what a coastline looked like centuries ago.</p>
+        <div class="cap">Reflected-light photo of <em>Ammonia confertitesta</em>, a trochospiral foraminifer with a hyaline calcareous shell. This is how foraminifera appear under the microscope. The pink colour comes from Rose Bengal, a dye that binds to cytoplasm and is used to stain living specimens, distinguishing them from empty, dead shells in the same sample.</div>
+        <button type="button" class="fun-trigger" onclick="document.getElementById('dlg-funforams').showModal()">🔬 forams gone wild &rarr;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="research" class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Research &amp; academic service</div>
+      <h2>The other side of the same work.</h2>
+      <p><span id="applied-work-total">36+</span> peer-reviewed publications and conference contributions on benthic foraminifera, coastal ecology, paleoenvironment and environmental biomonitoring — <a href="publications.html">full list on this site</a> or on <a href="https://orcid.org/0000-0002-8309-3315" target="_blank" rel="noopener">ORCID</a>. Selected activity below.</p>
+    </div>
+    <div class="list-rows">
+      <div class="row">
+        <div class="yr">2019–2024</div>
+        <div class="rt">3 competitive grants &amp; fellowships won as PI<span>SNSF Spark, CHF 100,000 (2024) · Fonds de recherche du centenaire, Univ. Fribourg, CHF 7,000 (2022) · Alexander von Humboldt Postdoctoral Fellowship (2019)</span></div>
+      </div>
+      <div class="row">
+        <div class="yr">2025–26</div>
+        <div class="rt">Grant evaluator, Horizon Europe (MSCA)<span>European Commission — two review cycles</span></div>
+      </div>
+      <div class="row">
+        <div class="yr">2024</div>
+        <div class="rt">Proposal reviewer, Sonatina programme<span>National Science Center, Poland</span></div>
+      </div>
+      <div class="row">
+        <div class="yr">ongoing</div>
+        <div class="rt">Peer reviewer, 19 international journals<span>Including Marine Environmental Research, Science of the Total Environment, Journal of Foraminiferal Research, Ecological Indicators</span></div>
+      </div>
+      <div class="row">
+        <div class="yr">2014–ongoing</div>
+        <div class="rt">Member, FoBiMo international working group<span>Foraminifera for Biomonitoring — intertidal &amp; transitional environments</span></div>
+      </div>
+      <div class="row">
+        <div class="yr">2026</div>
+        <div class="rt">Participant, "Integrated Assessment of Coastal Systems Under Climate and Anthropogenic Stress"<span>In submission to the 7th BRICS Coordinated Call for Multilateral STI Projects</span></div>
+      </div>
+      <div class="row">
+        <div class="yr">2017–2018</div>
+        <div class="rt">Participant, ONSET project<span>"Effet de la micro-variabilité spatiale de la microfaune sur l'interprétation des enregistrements fossiles" — Université de Lille</span></div>
+      </div>
+      <div class="row">
+        <div class="yr">2015–2025</div>
+        <div class="rt">Supervised 8 BSc/MSc theses<span>Universities of Lille and Fribourg — as supervisor or co-supervisor. <a href="teaching.html">Full list</a></span></div>
+      </div>
+      <div class="row">
+        <div class="yr">2021</div>
+        <div class="rt">Session convener, Foraminifera Festival<span>The Micropalaeontological Society — General Session</span></div>
+      </div>
+      <div class="row">
+        <div class="yr">2022–23</div>
+        <div class="rt">Science for Youth &amp; Explora<span>Public science outreach for young audiences — University of Fribourg</span></div>
+      </div>
+      <div class="row">
+        <div class="yr">2015, 2017</div>
+        <div class="rt">Fête de la Mer<span>Public-facing marine science exhibits, Boulogne-sur-Mer</span></div>
+      </div>
+    </div>
+
+    <div class="eyebrow" style="margin-top:36px;">Other responsibilities</div>
+    <div class="list-rows" style="margin-top:14px;">
+      <div class="row">
+        <div class="yr">2021–ongoing</div>
+        <div class="rt">Responsible for the sample-washing laboratory &amp; binocular microscope management<span>University of Fribourg</span></div>
+      </div>
+      <div class="row">
+        <div class="yr">2021–ongoing</div>
+        <div class="rt">Responsible for the micropalaeontological teaching &amp; outreach collection<span>University of Fribourg</span></div>
+      </div>
+      <div class="row">
+        <div class="yr">2014–2015</div>
+        <div class="rt">Organiser, PhD Students' Day<span>Université de Lille</span></div>
+      </div>
+      <div class="row">
+        <div class="yr">2023</div>
+        <div class="rt">Invited jury member, PhD defence of Jean-Charles Pavard<span>"Besoins écologiques des foraminifères benthiques dans les milieux de transition naturels et modifiés par l'Homme : implications pour la biosurveillance" — 31 May 2023, Wimereux (Université de Lille)</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--ochre-soft);">Get in touch</div>
+    <h2>Let's talk about a project, a role, or a core sample.</h2>
+    <p>Open to environmental consulting, applied research, and institutional roles across France, Switzerland, Italy and beyond — coastal locations preferred.</p>
+    <div class="contact-links">
+      <a href="mailto:fabio.francescangeli85@gmail.com">fabio.francescangeli85@gmail.com</a>
+      <a href="https://linkedin.com/in/francesc1985" target="_blank" rel="noopener">linkedin.com/in/francesc1985</a>
+      <a href="https://orcid.org/0000-0002-8309-3315" target="_blank" rel="noopener">ORCID</a>
+      <a href="https://scholar.google.com/citations?user=pWJlfPQAAAAJ&hl=it" target="_blank" rel="noopener">Google Scholar</a>
+    </div>
+    <div class="foot-bottom">
+      <span>Fabio Francescangeli — Fribourg, Switzerland</span>
+      <span>Site last updated 2026</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('dialog.detail-dlg').forEach(function(dlg){
+    dlg.addEventListener('click', function(e){
+      if (e.target === dlg) dlg.close();
+    });
+  });
+</script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+(function(){
+  var sites = [
+    {name:"Elbe Estuary & Neufeld, Germany", lat:53.750000, lng:9.150000, works:[
+      "Modern Marsh Foraminifera of the Elbe Estuary: Distribution Patterns and Ecological Insights — conference, 2025",
+      "Foraminifera, the witnesses of recent marine changes: insight from the Elbe Estuary — conference, 2022",
+      "Distribution of benthic foraminifera upstream of the Elbe Estuary — conference, 2020",
+      "Ecological characterization of the Elbe Estuary and applicability of foraminifera-based transfer functions — conference, 2019",
+      "Benthic foraminiferal distribution in the Elbe Estuary (North Sea, Germany): a response to environmental stressors — publication, 2021",
+      "Thesis: Tiny shells, big stories — ecology and distribution of modern marsh benthic foraminifera, Elbe Estuary (Bettosini, 2025)",
+      "Thesis: Les foraminifères benthiques du marais salé de Neufeld (Philipona, 2024)"
+    ]},
+    {name:"Crotone basin, Ionian Sea, Italy", lat:39.080785, lng:17.127163, works:[
+      "Palaeoenvironmental and paleo-ecological quality status changes in the Crotone basin — conference, 2025",
+      "Inferring the palaeoenvironmental changes in the Crotone basin — conference, 2024",
+      "Industrial pressures and flooding events: shaping the benthic foraminiferal community in the Crotone basin — publication, 2026"
+    ]},
+    {name:"Adriatic Sea, Italy", lat:43.600000, lng:13.900000, works:[
+      "Benthic foraminiferal response to sediment depositional events: S1 and E1 Northern Adriatic LTER Sites — conference, 2024",
+      "Taxonomy-free eDNA-based foraminiferal biotic index for monitoring an offshore gas platform — publication, under review",
+      "Understanding the Distributions of Benthic Foraminifera in the Adriatic Sea with Gradient Forest and Structural Equation Models — publication, 2023",
+      "Testing the applicability of random forest modeling to examine benthic foraminiferal responses — publication, 2021"
+    ]},
+    {name:"Boulogne-sur-Mer, France", lat:50.726161, lng:1.595868, works:[
+      "Enhancing Coastal Management: Leveraging Benthic Foraminifera for Sediment Quality Monitoring in Boulogne-sur-Mer Harbor — conference, 2024",
+      "Temporal changes in intertidal benthic foraminifera: a seasonal survey from the English Channel — conference, 2023",
+      "Ecological zonation of intertidal foraminifera from Hauts-de-France — conference, 2017",
+      "A multiproxy approach to characterize natural and human-perturbed coastal areas — conference, 2018",
+      "Benthic foraminifera as tracers of natural and anthropogenic environmental changes — conference, 2014",
+      "Seasonal variability of benthic foraminifera across intertidal areas of the Eastern English Channel — publication, 2025",
+      "Multidisciplinary study to monitor consequences of pollution on intertidal benthic ecosystems (Hauts de France) — publication, 2020",
+      "Benthic foraminifera as indicators of 200 years of human pressure in the Harbor of Boulogne-sur-Mer — publication, 2016",
+      "Le port de Boulogne, une histoire enfouie dans ses sédiments — publication, 2017",
+      "Thesis: Invasion aux eaux calmes — foraminifers du genre Ammonia, Petit-Port de Boulogne-sur-Mer (Yerly, 2025)",
+      "Thesis: Benthic living foraminifera as bio-indicator, harbour of Boulogne-sur-Mer (Roux, 2015)"
+    ]},
+    {name:"Canche Estuary, France", lat:50.538320, lng:1.591321, works:[
+      "Temporal changes in intertidal benthic foraminifera: a seasonal survey — conference, 2023",
+      "Recent sedimentary evolution of an estuarine environment (Canche) — conference, 2019",
+      "Séquences sédimentaires de l'estuaire de la Canche — conference, 2019",
+      "Benthic foraminifera and historical pictures as tools to monitor landscape evolution, Canche Estuary — conference, 2018",
+      "A multiproxy approach to characterize natural and human-perturbed coastal areas — conference, 2018",
+      "Ecological zonation of intertidal foraminifera from Hauts-de-France — conference, 2017",
+      "Environmental constraints on benthic foraminiferal distribution in a salt marsh (Canche) — conference, 2014",
+      "Seasonal variability of benthic foraminifera across intertidal areas of the Eastern English Channel — publication, 2025",
+      "Multidisciplinary study to monitor consequences of pollution on intertidal benthic ecosystems — publication, 2020",
+      "Infilling of the Canche estuary: insight from benthic foraminifera and historical pictures — publication, 2018",
+      "Does elevation matter? Living foraminiferal distribution in a hyper tidal salt marsh (Canche Estuary) — publication, 2017",
+      "Thesis: Palaeo-environmental reconstruction based on benthic foraminifera of a tidal marsh area, Le Touquet (Portela, 2016)"
+    ]},
+    {name:"Aa Estuary, France", lat:50.974700, lng:2.133060, works:[
+      "Temporal changes in intertidal benthic foraminifera: a seasonal survey — conference, 2023",
+      "A multiproxy approach to characterize natural and human-perturbed coastal areas — conference, 2018",
+      "Ecological zonation of intertidal foraminifera from Hauts-de-France — conference, 2017",
+      "Seasonal variability of benthic foraminifera across intertidal areas of the Eastern English Channel — publication, 2025",
+      "Multidisciplinary study to monitor consequences of pollution on intertidal benthic ecosystems — publication, 2020"
+    ]},
+    {name:"Somme Estuary, France", lat:50.201389, lng:1.626944, works:[
+      "Temporal changes in intertidal benthic foraminifera: a seasonal survey — conference, 2023",
+      "A multiproxy approach to characterize natural and human-perturbed coastal areas — conference, 2018",
+      "Ecological zonation of intertidal foraminifera from Hauts-de-France — conference, 2017",
+      "Seasonal variability of benthic foraminifera across intertidal areas of the Eastern English Channel — publication, 2025",
+      "Multidisciplinary study to monitor consequences of pollution on intertidal benthic ecosystems — publication, 2020"
+    ]},
+    {name:"Authie Estuary, France", lat:50.373433, lng:1.562661, works:[
+      "Temporal changes in intertidal benthic foraminifera: a seasonal survey — conference, 2023",
+      "A multiproxy approach to characterize natural and human-perturbed coastal areas — conference, 2018",
+      "Ecological zonation of intertidal foraminifera from Hauts-de-France — conference, 2017",
+      "Seasonal variability of benthic foraminifera across intertidal areas of the Eastern English Channel — publication, 2025",
+      "Multidisciplinary study to monitor consequences of pollution on intertidal benthic ecosystems — publication, 2020"
+    ]},
+    {name:"Danakil Depression, Ethiopia", lat:14.241893, lng:40.299862, works:[
+      "Fossil benthic foraminifera from the Danakil Depression: avian transport within an active rift valley — conference only, 2023"
+    ]},
+    {name:"Baskil, Turkey", lat:38.567829, lng:38.823716, works:[
+      "Paleoenvironmental changes and biotic resilience across MECO: Baskil Section — conference, 2022",
+      "Foraminiferal and calcareous nannofossil resilience to MECO, Baskil section — conference, 2021",
+      "Impact of MECO on Foraminiferal and Calcareous Nannofossil Assemblages, Neo-Tethyan Baskil Section — publication, 2021"
+    ]},
+    {name:"Gulf of Bagnoli, Italy", lat:40.817182, lng:14.169113, works:[
+      "Environmental monitoring of the highly polluted Gulf of Bagnoli — conference, 2021",
+      "Benthic monitoring of highly polluted Gulf of Bagnoli — conference, 2021",
+      "Encapsulated in sediments: eDNA deciphers the ecosystem history of Bagnoli-Coroglio, a most polluted European marine site — publication, 2023",
+      "Assessing the Ecological Quality Status in the highly polluted Gulf of Bagnoli using foraminiferal eDNA metabarcoding — publication, 2021"
+    ]},
+    {name:"Lake Varano, Italy", lat:41.879528, lng:15.746853, works:[
+      "Terrigenous constraints on faunal distribution — conference, 2015",
+      "Benthic foraminiferal assemblages and biotopes in a coastal lake: Lake Varano — GEOITALIA, conference, 2013",
+      "Benthic foraminiferal assemblages and biotopes in a coastal lake: Lake Varano — Intl. Meiofauna Conference, conference, 2013",
+      "Environmental control on a land-sea transitional setting (Lake Varano) — publication, 2015",
+      "Biodiversity trends of the meiofauna and foraminifera assemblages of Lake Varano — publication, 2014",
+      "Benthic foraminiferal assemblages and biotopes in a coastal lake: Lake Varano — publication, 2013"
+    ]},
+    {name:"Norcia, Italy", lat:42.791923, lng:13.094780, works:[
+      "Orbitolinid-rich calcarenitic beds in the Scaglia Bianca formation, Northern Apennines — conference, 2011"
+    ]},
+    {name:"Sant'Elia-Foxi canyon, Sardinia, Italy", lat:39.150000, lng:9.150000, works:[
+      "Benthic foraminifera as proxies for paleoenvironmental reconstructions: Sant'Elia-Foxi canyon — publication, 2023"
+    ]},
+    {name:"Wadden Sea Salt Marshes, Germany", lat:54.304804, lng:8.652221, works:[
+      "Braving the Extremes: Foraminifera Document Changes in Climate-Induced and Anthropogenic Stress in Wadden Sea Salt Marshes — publication, 2023"
+    ]},
+    {name:"Gulf of Gaeta, Italy", lat:41.100000, lng:13.500000, works:[
+      "Paleoenvironmental changes in the Gulf of Gaeta: a perspective from benthic foraminifera after dam construction — publication, 2023"
+    ]},
+    {name:"Guanabara Bay, Brazil", lat:-22.811567, lng:-43.154461, works:[
+      "Inferring the ecological quality status based on living benthic foraminiferal indices, Guanabara Bay — publication, 2023"
+    ]},
+    {name:"Kuwait Bay, Kuwait", lat:29.459837, lng:47.961410, works:[
+      "Benthic foraminifera as proxies for the environmental quality assessment of the Kuwait Bay — publication, 2022"
+    ]},
+    {name:"Gulf of Gabes, Tunisia", lat:34.208024, lng:10.800005, works:[
+      "Foraminiferal-based biotic indices to assess the ecological quality status of Gulf of Gabes — publication, 2020"
+    ]},
+    {name:"Sepetiba Bay, Brazil", lat:-22.986540, lng:-43.693358, works:[
+      "Paleo-Ecological Quality Status induced by natural and anthropogenic impacts in the last 2000 years, Sepetiba Bay — publication, 2024",
+      "Assessment of the ecological quality status of Sepetiba Bay: when metabarcoding meets morphology — publication, 2024",
+      "Unraveling the Anthropocene palaeo-environmental conditions, Sepetiba Bay — publication, 2022"
+    ]},
+    {name:"Ilha Grande Bay, Brazil", lat:-23.137730, lng:-44.154698, works:[
+      "Ecological Quality Status of the Ilha Grande Bay through foraminiferal morphology and eDNA metabarcoding — publication, 2025"
+    ]},
+    {name:"Gulf of Taranto, Italy", lat:39.811419, lng:17.335419, works:[
+      "Exploring the Underwater Life of Transitional Environments: Benthic Foraminifera, Ostracods, and Plankton Cysts — publication, 2024"
+    ]},
+    {name:"Mar Piccolo, Taranto, Italy", lat:40.487726, lng:17.229652, works:[
+      "Exploring the Underwater Life of Transitional Environments: Benthic Foraminifera, Ostracods, and Plankton Cysts — publication, 2024"
+    ]},
+    {name:"Parangipettai, India", lat:11.494525, lng:79.759614, works:[
+      "Assessing the Ecological Quality Status in tropical Indian estuaries — publication, 2024"
+    ]},
+    {name:"Mont Terri, Switzerland", lat:47.367279, lng:7.168348, works:[
+      "Facies variability and depositional cyclicity in central northern Switzerland: Opalinus Clay drill cores — publication, 2024"
+    ]},
+    {name:"French Atlantic Coast", lat:46.160329, lng:-1.151139, works:[
+      "Foraminifères estuariens de la façade atlantique française: Guide de détermination — publication, 2023"
+    ]},
+    {name:"Lake Geneva, Switzerland", lat:46.441420, lng:6.529524, works:[
+      "Thesis: How sustainably is Switzerland managing water — the basis of life — to ensure water quality in the long term? (Gasser, 2025)"
+    ]},
+    {name:"Belgica Mound Province (offshore Ireland)", lat:51.500000, lng:-11.700000, works:[
+      "Thesis: Foraminifères benthiques comme témoins des changements géologiques dans les mud mounds de la province de Belgica (Constantine, 2025)"
+    ]}
+  ];
+  var map = L.map('sites-map', {scrollWheelZoom:false}).setView([44, 10], 4);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    maxZoom: 18
+  }).addTo(map);
+  sites.forEach(function(s){
+    var n = s.works.length;
+    var icon = L.divIcon({
+      className: 'site-num-marker',
+      html: '<div style="background:#0F6E56;color:#fff;border:1.5px solid #04342C;border-radius:50%;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-family:IBM Plex Mono, monospace;font-size:12px;font-weight:500;">' + n + '</div>',
+      iconSize: [26, 26],
+      iconAnchor: [13, 13]
+    });
+    var marker = L.marker([s.lat, s.lng], {icon: icon}).addTo(map);
+    var list = s.works.map(function(w){ return '<li style="margin-bottom:6px;">' + w + '</li>'; }).join('');
+    marker.bindPopup(
+      '<div style="max-width:280px;"><strong>' + s.name + '</strong> — ' + n + (n===1 ? ' work' : ' works') +
+      '<ul style="margin:8px 0 0; padding-left:16px; font-size:0.74rem; line-height:1.4;">' + list + '</ul></div>',
+      {maxHeight: 260}
+    );
+  });
+})();
+</script>
+
+<script src="publications-data.js"></script>
+<script>
+  // Keeps the "X+ peer-reviewed publications and conference contributions"
+  // line in sync with publications-data.js, so it never drifts out of date
+  // again when a new entry is added on the publications page.
+  (function(){
+    if (typeof PUBLICATIONS_DATA === 'undefined') return;
+    var d = PUBLICATIONS_DATA;
+    var total = d.journals.length + d.inPrep.length + d.atlas.length + d.outreach.length + d.conferences.length;
+    var el = document.getElementById('applied-work-total');
+    if (el) el.textContent = total + '+';
+  })();
+</script>
+</body>
+</html>
