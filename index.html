@@ -142,8 +142,9 @@
 
   /* ---------- ABOUT ---------- */
   .about-grid{
-    display:grid; grid-template-columns: 1.3fr 1fr; gap:48px; align-items:start;
+    display:grid; grid-template-columns: 0.85fr 1.5fr 1.1fr; gap:40px; align-items:start;
   }
+  .about-portrait-col .ph{background:var(--bg-panel); border:1px solid var(--line);}
   .about-grid p{font-size:1.02rem; color:var(--ink-soft); margin:0 0 16px;}
   .about-grid p:first-child{color:var(--ink); font-size:1.08rem;}
   .fact-panel{
@@ -492,6 +493,9 @@
 
 <section id="about">
   <div class="wrap about-grid">
+    <div class="about-portrait-col">
+      <div class="ph" style="aspect-ratio:900/1124; border-radius:4px; overflow:hidden;"><img src="images/portrait-fabio-elbe-boat.jpg" alt="Fabio Francescangeli on a research boat in the Elbe Estuary, Germany, wearing a flat cap and a red life vest." style="width:100%;height:100%;object-fit:cover;"></div>
+    </div>
     <div>
       <div class="eyebrow" style="margin-bottom:14px;">About</div>
       <p>I'm a geologist and marine ecologist working at the boundary between academic research and applied environmental practice. My core tool is the humble benthic foraminifer — a single-celled organism that, read correctly, reconstructs what a coastline looked like in the past and tracks how it's changing under global change today.</p>
@@ -615,7 +619,7 @@
         <div class="eyebrow">ForamEcoQS</div>
         <h3>Coordinating a biomonitoring software suite</h3>
         <p>Coordinated the development of an analytical software suite that turns foraminiferal assemblage data into standardised ecological quality indicators — built for repeatable use, not a one-off analysis.</p>
-        <div class="metric">Senior / last author · in submission</div>
+        <div class="metric">Senior / last author · under review, SoftwareX</div>
         <div class="expand-tag">View details &rarr;</div>
       </button>
       <button class="card" type="button" onclick="document.getElementById('dlg-offshore').showModal()">
@@ -655,9 +659,11 @@
     <button class="dlg-close" type="button" onclick="document.getElementById('dlg-foramecoqs').close()" aria-label="Close">&times;</button>
     <div class="eyebrow">ForamEcoQS</div>
     <h3>Coordinating a biomonitoring software suite</h3>
+    <div class="ph wide-ph" style="aspect-ratio:1376/768;"><img src="images/foramecoqs-graphical-abstract.jpg" alt="Graphical abstract of ForamEcoQS, an analytical software suite that converts foraminiferal assemblage data into standardised ecological quality indicators." style="width:100%;height:100%;object-fit:contain;background:#fff;"></div>
+    <div class="cap" style="margin-top:8px;">Graphical abstract, Mangiagalli, Frontalini, Cristallo &amp; Francescangeli (under review, SoftwareX) — not yet published; figure subject to change through peer review.</div>
     <p>Most foraminifera-based ecological quality assessments live as one-off analyses buried in a paper's supplementary material — useful once, then hard to reuse. ForamEcoQS is an attempt to change that: an analytical software suite that takes raw assemblage data and outputs standardised ecological quality indicators, repeatably and consistently.</p>
     <p>I coordinated its development as senior/last author, working with the team on the logic of the indicators and how the tool should behave for someone who isn't a foraminiferal taxonomist by training — the target user is a biomonitoring practitioner, not necessarily a specialist.</p>
-    <div class="metric">Senior / last author · in submission to Methods in Ecology and Evolution</div>
+    <div class="metric">Senior / last author · under review, SoftwareX</div>
   </div>
 </dialog>
 
@@ -677,6 +683,8 @@
     <button class="dlg-close" type="button" onclick="document.getElementById('dlg-elbe').close()" aria-label="Close">&times;</button>
     <div class="eyebrow">Elbe Estuary, Germany</div>
     <h3>Closing a 40-year monitoring gap</h3>
+    <div class="ph wide-ph" style="aspect-ratio:1600/1050;"><img src="images/elbe-fig-species-replacement.jpg" alt="Comparison figure showing Elphidium excavatum, dominant in the Elbe Estuary in 1983, replaced by the invasive Asian species Ammonia confertitesta as the dominant species in 2019." style="width:100%;height:100%;object-fit:contain;background:#fff;"></div>
+    <div class="cap" style="margin-top:8px;">The dominant species shift documented by the 2019 baseline survey, compared against the 1981–83 record (Wang 1983): a niche vacated by a native species and filled by an invasive one.</div>
     <p>The Elbe Estuary hadn't had a dedicated foraminiferal survey since 1981 — a 40-year gap during which the estuary's hydrology, shipping traffic and water quality all changed substantially. This project ran a fresh baseline: 22 stations sampled from the research vessel <em>Ludwig Prandtl</em>, comparing living and dead assemblages to the 1981 record.</p>
     <p>Beyond the baseline itself, the sediment record was used to build foraminifera-based transfer functions for reconstructing relative sea-level change — connecting present-day biomonitoring to longer-term questions about coastal adaptation under climate change.</p>
     <div class="metric">First author · Estuarine, Coastal and Shelf Science, 2021</div>
@@ -831,11 +839,11 @@
     <div class="eyebrow" style="margin-top:36px;">Other responsibilities</div>
     <div class="list-rows" style="margin-top:14px;">
       <div class="row">
-        <div class="yr">2021–2025</div>
+        <div class="yr">2021–ongoing</div>
         <div class="rt">Responsible for the sample-washing laboratory &amp; binocular microscope management<span>University of Fribourg</span></div>
       </div>
       <div class="row">
-        <div class="yr">2021–2025</div>
+        <div class="yr">2021–ongoing</div>
         <div class="rt">Responsible for the micropalaeontological teaching &amp; outreach collection<span>University of Fribourg</span></div>
       </div>
       <div class="row">

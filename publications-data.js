@@ -148,8 +148,8 @@ const PUBLICATIONS_DATA = {
   ],
   "inPrep": [
     {
-      "year": "In prep.",
-      "html": "Mangiagalli M., Frontalini F., Cristallo C., <strong>Francescangeli F</strong>. <em>ForamEcoQS: An Analytical Software Suite for Foraminiferal Ecological Quality Status</em>. Submitted to Methods in Ecology and Evolution"
+      "year": "Under review",
+      "html": "Mangiagalli M., Frontalini F., Cristallo C., <strong>Francescangeli F</strong>. <em>ForamEcoQS: An Analytical Software Suite for Foraminiferal Ecological Quality Status</em>. Under review in SoftwareX"
     },
     {
       "year": "In prep.",
