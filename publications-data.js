@@ -2,6 +2,14 @@ const PUBLICATIONS_DATA = {
   "journals": [
     {
       "year": "2026",
+      "html": "Mangiagalli M., Frontalini F., Cristallo C., <strong>Francescangeli F</strong>. (2026) <em>ForamEcoQS: An analytical software suite for foraminiferal ecological quality status assessment</em>. SoftwareX, 102921, <a href=\"https://doi.org/10.1016/j.softx.2026.102921\" target=\"_blank\" rel=\"noopener\">doi.org/10.1016/j.softx.2026.102921</a> (open-source; code and documentation on <a href=\"https://github.com/uniurbit/ForamEcoQS\" target=\"_blank\" rel=\"noopener\">GitHub</a>)"
+    },
+    {
+      "year": "2026",
+      "html": "Bouchet V.M.P., <strong>Francescangeli F</strong>., de Mello e Sousa S.H., Pawlowski J., Frontalini F. (2026) <em>Taxonomy-free eDNA-based foraminiferal biotic index performs better than morphologically-based one to monitor the impact of an offshore gas platform</em>. PLOS ONE, 21(8): e0356357, <a href=\"https://doi.org/10.1371/journal.pone.0356357\" target=\"_blank\" rel=\"noopener\">doi.org/10.1371/journal.pone.0356357</a>"
+    },
+    {
+      "year": "2026",
       "html": "Cristallo C., Schirone A., Bouchet VMP, Richirt J., Buosi C., Delbono I., <strong>Francescangeli F</strong>., Oliveri E., Sprovieri M., Frontalini F. (2026) <em>Industrial pressures and flooding events: shaping the benthic foraminiferal community in the Crotone basin (Ionian Sea) over the last century</em>. Regional Studies in Marine Science, 99, 105133, <a href=\"https://doi.org/10.1016/j.rsma.2026.105133\" target=\"_blank\" rel=\"noopener\">doi.org/10.1016/j.rsma.2026.105133</a> (open access)"
     },
  {
@@ -148,12 +156,16 @@ const PUBLICATIONS_DATA = {
   ],
   "inPrep": [
     {
-      "year": "Under review",
-      "html": "Mangiagalli M., Frontalini F., Cristallo C., <strong>Francescangeli F</strong>. <em>ForamEcoQS: An Analytical Software Suite for Foraminiferal Ecological Quality Status</em>. Under review in SoftwareX"
+      "year": "Submitted",
+      "html": "Punniyamoorthy R., Murugesan P., Sanchez A., Frontalini F., Cristallo C., Karthikeyan P., Marigoudar S.R., <strong>Francescangeli F</strong>. <em>Integrating benthic foraminifera into EcoQS frameworks for monitoring Southeast Indian coastal environments</em>. Submitted to Marine Environmental Research"
     },
     {
       "year": "In prep.",
-      "html": "Bouchet VMP, <strong>Francescangeli F</strong>., e Mello e Sousa SH, Pawlowski J., Frontalini F.. <em>Taxonomy-free eDNA-based foraminiferal biotic index performs better than morphologically-based one to monitor the impact of an offshore gas platform.</em> Under review in PLOs"
+      "html": "Bettosini C.C., Milker Y., Bunzel D., Frontalini F. and Schmiedl G., <strong>Francescangeli F</strong>. <em>Ecology and distribution of modern marsh benthic foraminifera from Elbe Estuary (Neufeld, Northern Germany)</em>. In preparation"
+    },
+    {
+      "year": "In prep.",
+      "html": "Cristallo C., Schirone A., Bouchet V.M.P., Richirt J., Buosi C., <strong>Francescangeli F</strong>., Olivieri E., Sprovieri M., Frontalini F. <em>On the occurrence of the invasive species Ammonia confertitesta along the Atlantic French coasts (English Channel)</em>. In preparation"
     }
   ],
   "atlas": [
