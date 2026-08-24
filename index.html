@@ -516,7 +516,7 @@
       <dt>Fellowship</dt>
       <dd>Alexander von Humboldt Foundation, Hamburg (2019–2021)</dd>
       <dt>Bibliometrics</dt>
-      <dd>36 peer-reviewed publications · h-index 19 · 960+ citations (Google Scholar)</dd>
+      <dd><span id="bib-journals-total">36</span> peer-reviewed publications · h-index 19 · 1000+ citations (Google Scholar)</dd>
       <dt>Affiliations</dt>
       <dd>Società Paleontologica Italiana · The Micropalaeontological Society · Association des Sédimentologistes Français</dd>
       <dt>ORCID</dt>
@@ -787,7 +787,7 @@
     <div class="section-head">
       <div class="eyebrow">Research &amp; academic service</div>
       <h2>The other side of the same work.</h2>
-      <p><span id="applied-work-total">36+</span> peer-reviewed publications and conference contributions on benthic foraminifera, coastal ecology, paleoenvironment and environmental biomonitoring — <a href="publications.html">full list on this site</a> or on <a href="https://orcid.org/0000-0002-8309-3315" target="_blank" rel="noopener">ORCID</a>. Selected activity below.</p>
+      <p><span id="applied-work-total">36+</span> peer-reviewed publications on benthic foraminifera, coastal ecology, paleoenvironment and environmental biomonitoring — plus numerous conference contributions — <a href="publications.html">full list on this site</a> or on <a href="https://orcid.org/0000-0002-8309-3315" target="_blank" rel="noopener">ORCID</a>. Selected activity below.</p>
     </div>
     <div class="list-rows">
       <div class="row">
@@ -1054,15 +1054,21 @@
 
 <script src="publications-data.js"></script>
 <script>
-  // Keeps the "X+ peer-reviewed publications and conference contributions"
-  // line in sync with publications-data.js, so it never drifts out of date
-  // again when a new entry is added on the publications page.
+  // Keeps the "X+ peer-reviewed publications" line (Applied Work section)
+  // and the bibliometrics journal count (About section) in sync with
+  // publications-data.js, so neither drifts out of date again when a new
+  // entry is added on the publications page. Counts only peer-reviewed
+  // journal articles (PUBLICATIONS_DATA.journals) — not conference
+  // contributions, items still in preparation/under review, the atlas, or
+  // outreach pieces, none of which are peer-reviewed journal articles.
   (function(){
     if (typeof PUBLICATIONS_DATA === 'undefined') return;
     var d = PUBLICATIONS_DATA;
-    var total = d.journals.length + d.inPrep.length + d.atlas.length + d.outreach.length + d.conferences.length;
+    var total = d.journals.length;
     var el = document.getElementById('applied-work-total');
     if (el) el.textContent = total + '+';
+    var bibEl = document.getElementById('bib-journals-total');
+    if (bibEl) bibEl.textContent = total;
   })();
 </script>
 </body>

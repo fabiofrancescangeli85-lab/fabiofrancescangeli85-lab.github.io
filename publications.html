@@ -238,10 +238,11 @@
   renderSection('invited-list', PUBLICATIONS_DATA.invitedTalks,
     function(n){ return entryCount(n) + ', by invitation'; });
 
-  // Top stats row: journal count = published + in-prep, so it matches the
-  // combined total readers see across the two sections above.
+  // Top stats row: journal count = peer-reviewed, published articles only
+  // (matches the "Journal articles" label — in-prep/submitted items have
+  // their own separate count in the section below).
   document.getElementById('stat-journals').textContent =
-    PUBLICATIONS_DATA.journals.length + PUBLICATIONS_DATA.inPrep.length;
+    PUBLICATIONS_DATA.journals.length;
   document.getElementById('stat-conferences').textContent = PUBLICATIONS_DATA.conferences.length;
   document.getElementById('stat-invited').textContent = PUBLICATIONS_DATA.invitedTalks.length;
 </script>
