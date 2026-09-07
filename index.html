@@ -158,6 +158,8 @@
   .fact-panel dt{color:var(--ochre); text-transform:uppercase; letter-spacing:0.06em; font-size:0.68rem; margin-top:16px;}
   .fact-panel dt:first-child{margin-top:0;}
   .fact-panel dd{margin:4px 0 0; color:var(--ink); line-height:1.5;}
+  .fact-panel .cite-highlight{font-size:1.35rem; font-weight:600; color:var(--rose); text-decoration:none;}
+  .fact-panel .cite-highlight:hover{color:var(--ochre);}
 
   /* ---------- CORE LOG (signature timeline) ---------- */
   .core-intro{max-width:640px; margin-bottom:10px;}
@@ -225,6 +227,7 @@
   /* ---------- PROJECT CARDS ---------- */
   .grid-cards{display:grid; grid-template-columns:repeat(2, 1fr); gap:22px; margin-top:8px;}
   .card{
+    position:relative;
     background:var(--bg);
     border:1px solid var(--line);
     padding:26px;
@@ -234,6 +237,37 @@
     cursor:pointer;
     display:block;
     width:100%;
+  }
+  .new-badge{
+    position:absolute;
+    top:-11px; right:18px;
+    background:var(--rose);
+    color:#fff;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.64rem;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    padding:4px 10px;
+    border-radius:20px;
+    box-shadow:0 0 0 4px var(--rose-soft);
+    animation:badge-pulse 2.4s ease-in-out infinite;
+  }
+  @keyframes badge-pulse{
+    0%, 100%{box-shadow:0 0 0 4px var(--rose-soft);}
+    50%{box-shadow:0 0 0 7px var(--rose-soft);}
+  }
+  .video-embed{
+    position:relative;
+    width:100%;
+    aspect-ratio:16/9;
+    margin-top:16px;
+    background:#000;
+    border:1px solid var(--line);
+  }
+  .video-embed iframe{
+    position:absolute; top:0; left:0;
+    width:100%; height:100%;
+    border:0;
   }
   .card:hover{transform:translateY(-3px); box-shadow:0 10px 24px rgba(18,51,62,0.08);}
   .card:focus-visible{outline:2px solid var(--rose); outline-offset:2px;}
@@ -432,17 +466,20 @@
     align-items:center;
     gap:6px;
     font-family:'IBM Plex Mono', monospace;
-    font-size:0.72rem;
+    font-size:0.74rem;
+    font-weight:500;
     text-transform:uppercase;
     letter-spacing:0.06em;
-    color:var(--rose);
-    background:none;
-    border:1px dashed var(--rose-soft);
-    padding:8px 14px;
+    color:var(--teal-deep);
+    background:var(--rose-soft);
+    border:1px solid var(--rose);
+    padding:10px 16px;
     cursor:pointer;
-    border-radius:2px;
+    border-radius:3px;
+    box-shadow:0 2px 8px rgba(196,104,94,0.22);
+    transition:transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, color 0.15s ease;
   }
-  .fun-trigger:hover{background:var(--rose-soft); color:var(--teal-deep); border-color:var(--rose);}
+  .fun-trigger:hover{background:var(--rose); color:#fff; box-shadow:0 6px 16px rgba(196,104,94,0.36); transform:translateY(-2px);}
   .fun-dlg{max-width:760px;}
   .fun-gallery{display:grid; grid-template-columns:repeat(2, 1fr); gap:20px; margin-top:20px;}
   .fun-gallery .ph{aspect-ratio:1/1;}
@@ -516,9 +553,9 @@
       <dt>Fellowship</dt>
       <dd>Alexander von Humboldt Foundation, Hamburg (2019–2021)</dd>
       <dt>Bibliometrics</dt>
-      <dd><span id="bib-journals-total">36</span> peer-reviewed publications · h-index 19 · 1000+ citations (Google Scholar)</dd>
-      <dt>Affiliations</dt>
-      <dd>Società Paleontologica Italiana · The Micropalaeontological Society · Association des Sédimentologistes Français</dd>
+      <dd><span id="bib-journals-total">36</span> peer-reviewed publications · h-index 19</dd>
+      <dt>Citations</dt>
+      <dd><a href="https://scholar.google.com/citations?user=pWJlfPQAAAAJ&amp;hl=it" target="_blank" rel="noopener" class="cite-highlight">1000+</a> · <a href="https://scholar.google.com/citations?user=pWJlfPQAAAAJ&amp;hl=it" target="_blank" rel="noopener">view on Google Scholar</a></dd>
       <dt>ORCID</dt>
       <dd><a href="https://orcid.org/0000-0002-8309-3315" target="_blank" rel="noopener">0000-0002-8309-3315</a></dd>
     </dl>
@@ -616,6 +653,7 @@
         <div class="expand-tag">View details &rarr;</div>
       </button>
       <button class="card" type="button" onclick="document.getElementById('dlg-foramecoqs').showModal()">
+        <span class="new-badge">🎥 New</span>
         <div class="eyebrow">ForamEcoQS</div>
         <h3>Coordinating a biomonitoring software suite</h3>
         <p>Coordinated the development of an open-source software suite — GUI and command-line — that turns raw foraminiferal assemblage data into standardised ecological quality indicators, validated against published reference datasets and a stress test of nearly 3,500 samples.</p>
@@ -664,6 +702,11 @@
     <p>Most foraminifera-based ecological quality assessments live as one-off analyses buried in a paper's supplementary material — useful once, then hard to reuse. ForamEcoQS is an attempt to change that: an open-source desktop application that imports species abundance matrices, resolves taxonomic names against regional ecological-group lists, calculates diversity descriptors and the major foraminiferal biotic indices, and converts the results into standardised ecological quality classes — repeatably and consistently.</p>
     <p>I coordinated its development as senior/last author, working with the team on the logic of the indicators and how the tool should behave for someone who isn't a foraminiferal taxonomist by training — the target user is a biomonitoring practitioner, not necessarily a specialist. The tool combines an interactive Windows GUI with a command-line mode for reproducible batch processing, and was validated against published reference datasets, independent Python/R implementations, and a large-scale stress test of 3,491 samples.</p>
     <div class="metric">Senior / last author · SoftwareX, 2026 · <a href="https://doi.org/10.1016/j.softx.2026.102921" target="_blank" rel="noopener">doi.org/10.1016/j.softx.2026.102921</a></div>
+    <div class="eyebrow" style="margin-top:26px;">🎥 Video tutorial</div>
+    <div class="video-embed">
+      <iframe src="https://www.youtube-nocookie.com/embed/tuPkLLyo4yw?start=25" title="ForamEcoQS video tutorial" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <p>A short screen-recorded walkthrough we put together for anyone about to try ForamEcoQS for the first time: importing a species abundance matrix, resolving names against the ecological-group lists, and reading the resulting quality-class output.</p>
   </div>
 </dialog>
 
